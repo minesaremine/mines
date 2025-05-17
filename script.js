@@ -1,3 +1,15 @@
+window.addEventListener("load", () => {
+    const preloader = document.getElementById("preloader");
+    if (preloader) {
+        preloader.classList.add("fade-out");
+        setTimeout(() => {
+            preloader.remove();
+        }, 500); // Удалим элемент после завершения анимации
+    }
+});
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const statusElement = document.getElementById('status');
     const flipButton = document.getElementById('flip');
